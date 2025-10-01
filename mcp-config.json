@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "C:\\Users\\seant\\OneDrive\\Documents\\Claude\\Projects"
+            ]
+        },
+        "MCP_DOCKER": {
+            "command": "docker",
+            "args": [
+                "mcp",
+                "gateway",
+                "run"
+            ],
+            "env": {
+                "LOCALAPPDATA": "C:\\Users\\seant\\AppData\\Local",
+                "ProgramData": "C:\\ProgramData",
+                "ProgramFiles": "C:\\Program Files"
+            }
+        }
+    }
+}
